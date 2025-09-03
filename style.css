@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #032d38;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #f7fcff;
+}
+
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+  gap: 25px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.movie-card {
+  background: rgb(171, 243, 233);
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  display: flex;               
+  flex-direction: row;         
+  align-items: stretch;
+  overflow: hidden;
+  height: 240px;               
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.movie-card:hover {
+  transform: scale(1.08);    
+  box-shadow: 2px 7px 20px rgb(247, 247, 247); 
+  z-index: 5; 
+}
+
+.movie-card img {
+  width: 200px;                
+  height: 100%;                
+  
+}
+
+.movie-info {
+  flex: 1;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.movie-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 5px 0;
+  color: purple;
+}
+
+.movie-date {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.movie-lang {
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 8px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.overview {
+  font-size: 12px;
+  color: #444;
+  line-height: 1.4;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;     
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.movie-detail-card{
+  align-items: center;
+  text-align: center;
+  color:#f7fcff;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#back-btn {
+  background-color: #3498db;    
+  color: white;                 
+  padding: 10px 20px;          
+  border: none;                 
+  border-radius: 8px;         
+  font-size: 16px;           
+  font-weight: bold;           
+  cursor: pointer;            
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;  
+}
+
+#back-btn:hover {
+  background-color: #2980b9;   
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); 
+}
